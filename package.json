@@ -1,0 +1,6 @@
+{
+  "name": "data_foundation_poc",
+  "dependencies": {
+    "@dataform/core": "2.4.2"
+  }
+}
