@@ -1,0 +1,10 @@
+-- js {
+--  const foo = 1;
+--  function bar(number){
+--      return number+1;
+--  }
+-- }
+
+-- select
+--  ${foo} as one,
+--  ${bar(foo)} as two

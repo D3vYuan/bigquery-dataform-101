@@ -1,0 +1,7 @@
+-- https://cloud.google.com/dataform/docs/document-tables
+-- config { type: "table",
+-- description: "My table description",
+-- columns: docs.columns
+-- }
+
+-- SELECT 1 AS one

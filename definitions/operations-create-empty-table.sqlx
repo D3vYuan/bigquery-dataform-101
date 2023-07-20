@@ -1,0 +1,8 @@
+-- config {
+--   type: "operations",
+--   hasOutput: true  // optional, lets you reference the empty table
+-- }
+
+-- CREATE TABLE ${self()} (
+
+-- )

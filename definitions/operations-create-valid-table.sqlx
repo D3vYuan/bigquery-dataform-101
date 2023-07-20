@@ -1,0 +1,8 @@
+-- config {
+--   type: "operations"
+-- }
+
+-- CREATE TABLE ${self()} (
+--   x INT64,
+--   y STRING
+-- )

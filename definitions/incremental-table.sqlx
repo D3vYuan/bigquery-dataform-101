@@ -1,0 +1,13 @@
+-- https://cloud.google.com/dataform/docs/incremental-tables
+-- config {
+--   type: "incremental",
+--   uniqueKey: ["transaction_id"],
+--   bigquery: {
+--     partitionBy: "DATE(timestamp)",
+--     updatePartitionFilter:
+--         "timestamp >= timestamp_sub(current_timestamp(), interval 24 hour)"
+--   }
+-- }
+
+-- SELECT timestamp, action FROM weblogs.user_actions
+-- ${ when(incremental(), `WHERE timestamp > (SELECT MAX(timestamp) FROM ${self()})`) }
