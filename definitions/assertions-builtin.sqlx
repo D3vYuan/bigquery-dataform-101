@@ -1,0 +1,39 @@
+-- config {
+--   type: "table",
+--   assertions: {
+--     nonNull: ["user_id", "customer_id", "email"]
+--   }
+-- }
+-- SELECT ...
+
+-- config {
+--   type: "incremental",
+--   assertions: {
+--     rowConditions: [
+--       'signup_date is null or signup_date > "2022-08-01"',
+--       'email like "%@%.%"'
+--     ]
+--   }
+-- }
+-- SELECT ...
+
+-- config {
+--   type: "view",
+--   assertions: {
+--     uniqueKey: ["user_id"]
+--   }
+-- }
+-- SELECT ...
+
+-- config {
+--   type: "table",
+--   assertions: {
+--     uniqueKey: ["user_id"],
+--     nonNull: ["user_id", "customer_id"],
+--     rowConditions: [
+--       'signup_date is null or signup_date > "2019-01-01"',
+--       'email like "%@%.%"'
+--     ]
+--   }
+-- }
+-- SELECT ...

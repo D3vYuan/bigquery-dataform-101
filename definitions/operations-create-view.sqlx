@@ -1,0 +1,2 @@
+-- config { type: "operations" }
+-- CREATE OR REPLACE VIEW dataset.table AS (SELECT 1 AS TEST)

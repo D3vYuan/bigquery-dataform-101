@@ -1,0 +1,10 @@
+-- config {
+--       type: "table",
+--       tags: ["advanced", "hourly"],
+--       disabled: true
+--   }
+
+--   ${functions.renderScript(ref("source_table"),
+--                                 ["country", "device_type"],
+--                                 ["revenue", "pageviews", "sessions"]
+--                                 )}

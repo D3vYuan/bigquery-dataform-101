@@ -1,0 +1,22 @@
+-- config {
+--   type: "incremental",
+-- }
+
+-- pre_operations {
+--   DECLARE event_timestamp_checkpoint DEFAULT (
+--     ${when(incremental(),
+--     `SELECT max(event_timestamp) FROM ${self()}`,
+--     `SELECT timestamp("2000-01-01")`)}
+--   )
+-- }
+
+-- SELECT
+--   *
+-- FROM
+--   ${ref("raw_events")}
+-- WHERE event_timestamp > event_timestamp_checkpoint
+
+--  post_operations {
+--     GRANT SELECT ON ${self()} TO GROUP "allusers@example.com";
+--     GRANT SELECT ON ${self()} TO GROUP "otherusers@example.com";
+--   }

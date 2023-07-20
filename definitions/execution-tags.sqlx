@@ -1,0 +1,5 @@
+config {
+  type: "view",
+  name: "user_counts",
+  tags: ["daily", "hourly"]
+}

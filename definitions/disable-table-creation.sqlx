@@ -1,0 +1,6 @@
+--   config {
+--     type: "table",
+--     disabled: true
+--   }
+
+--   select * from ${ref("source_data")}

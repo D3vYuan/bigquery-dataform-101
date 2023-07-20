@@ -1,0 +1,4 @@
+-- config { type: "operations" }
+
+-- DELETE FROM dataset.table WHERE country = 'GB';
+-- DELETE FROM dataset.table WHERE country = 'FR';

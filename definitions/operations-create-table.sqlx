@@ -1,0 +1,6 @@
+-- // filename is custom_SQL_operation_table.sqlx
+-- config {
+-- type: "operations",
+-- hasOutput: true
+-- }
+-- CREATE OR REPLACE VIEW ${self()} AS (SELECT 1 AS TEST)

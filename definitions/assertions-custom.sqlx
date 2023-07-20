@@ -1,0 +1,10 @@
+-- config { type: "assertion" }
+
+-- SELECT
+--   *
+-- FROM
+--   ${ref("sometable")}
+-- WHERE
+--   a IS NULL
+--   OR b IS NULL
+--   OR c IS NULL
